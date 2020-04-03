@@ -1,4 +1,4 @@
-/* Write your T-SQL query statement below */
+-- T-SQL code
 -- Goal : Get cancellation rates for unbanned users (driver and cliet both) between Oct 1 & Oct 3 by date
 -- Logic: 
 -- a. Get unbanned users from Users table 

@@ -1,6 +1,6 @@
 class Solution:
     def convert(self, s: str, numRows: int) -> str:
-        """Return a zigzag pattern coverted string"""
+        """Return a zigzag pattern converted string. Refer https://leetcode.com/problems/zigzag-conversion/"""
         
         if numRows <= 1 or len(s) <= numRows:
             return s
@@ -8,20 +8,16 @@ class Solution:
         # Determine number of columns
         remaining = len(s)
         numCols = 0
-        # print("cp0.a",remaining,numCols)
         while remaining > 0:
             remaining -= numRows
             numCols += 1
-            # print("cp0.b",remaining,numCols)
             for i in range(numRows-2):
                 if remaining > 0:
                     numCols += 1
                     remaining -= 1
                 else:
                     break
-            # print("cp0.c",remaining,numCols)
-        # print("cp1",numCols)
-    
+
         i = 0
         j = 0
         down = True
@@ -41,7 +37,5 @@ class Solution:
                 j += 1
             
         zigzag = ''.join([''.join(x) for x in arr]) 
-        
-        # print("cp2",zigzag)
-        
+
         return zigzag

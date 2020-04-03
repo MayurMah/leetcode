@@ -1,4 +1,4 @@
-/* Write your T-SQL query statement below */
+-- T-SQL code
 -- Goal: Find employees with top three salaries in each department
 -- Logic: Rank by salary within each department and chose rows where rank <= 3
 

@@ -1,4 +1,4 @@
-/* Write your T-SQL query statement below */
+--- T-SQL code
 -- Goal: Display records with >= 3 consecutive rows and people >= 100
 -- Logic: 
 -- Group consecutive records with people >= 100 and show records where number of consecutive records >= 3
